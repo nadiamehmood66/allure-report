@@ -14,10 +14,10 @@ test('Login Test - Latest Allure Style', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/login');
   });
 
-  await test.step('Intentionally fail: expect wrong title', async () => {
-      // ❌ ye jan-boojh ke fail karwaya hai
-      await expect(page).toHaveTitle('This Title Will Never Match');
-    });
+  // await test.step('Intentionally fail: expect wrong title', async () => {
+  //     // ❌ ye jan-boojh ke fail karwaya hai
+  //     await expect(page).toHaveTitle('This Title Will Never Match');
+  //   });
 
   await test.step('Enter credentials', async () => {
     await page.fill('#username', 'tomsmith');
