@@ -16,5 +16,5 @@ test('Test 3 - GitHub', async ({ page }) => {
   await page.goto('https://github.com');
   await expect(page).toHaveTitle(/GitHub/);
   console.log('Test 3')
-  console.log('Test 4')
+  console.log('Test feature1')
 });
